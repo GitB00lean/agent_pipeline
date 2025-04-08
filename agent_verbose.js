@@ -125,7 +125,7 @@ async function generateInterview(resumeFilePath, jobDescription, jobRole) {
   const resumeQs = await getResumeBasedQuestions(resumeInfo);
   const finalTable = await compileInterviewTable(generalQs, roleQs, resumeQs, mismatchNote, jobRole);
 
-  console.log("\n✅ Final Interview Table:\n", finalTable);
+  console.log("\n Final Interview Table:\n", finalTable);
 }
 
 
