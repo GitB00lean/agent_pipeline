@@ -80,7 +80,7 @@ async function generateInterview(resumeFilePath, jobDescription, jobRole) {
   const resumeQs = await getResumeBasedQuestions(resumeInfo);
   const finalTable = await compileInterviewTable(generalQs, roleQs, resumeQs, mismatchNote, jobRole);
 
-  console.log("\n✅ Final Interview Table:\n", finalTable);
+  console.log("\nFinal Interview Table:\n", finalTable);
 }
 
 generateInterview("./resume_ocr_output.txt", `
